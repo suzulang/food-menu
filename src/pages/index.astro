@@ -6,19 +6,17 @@ import Footer from "../components/Footer.astro";
 <Layout title="home">
   <section transition:animate="slide"  class="home cursor-default px-8% text-white gap-4">
     <h1 class="slogan text-6xl font-semibold">
-      Discover Your <span
+      你的<span
         class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
-        >Culinary Creations</span>
-       with Us.
+        >私人菜单</span>
     </h1>
     <p class="max-w-2xl text-center parrafo">
-      Welcome to my personal menu website, featuring my homemade dishes, detailed cost breakdowns, and step-by-step cooking instructions. Explore and enjoy a variety of culinary delights crafted with care.
+      记录你做过的菜吧
     </p>
     
 
     <div class="flex gap-6 mt-3">
-      <a class="button" href="/products"> <span>Start</span></a>
-      <a class="button" href="https://x.com/xianyi_jun" target="_blank"> <span>Contact</span></a>
+      <a class="button" href="/products"> <span>开始</span></a>
     </div>
   </section>
 
@@ -31,9 +29,9 @@ import Footer from "../components/Footer.astro";
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url(/images/bg.webp);
+      url(/images/bg.jpg);
     width: 100%;
-    min-height: calc(100vh - 52px);
+    height: 100vh;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -171,7 +169,7 @@ import Footer from "../components/Footer.astro";
     width: 120px;
     height: 40px;
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 5px; /* 改回原来的值 */
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -188,6 +186,7 @@ import Footer from "../components/Footer.astro";
     justify-content: center;
     align-items: center;
   }
+
 
   .button::before,
   .button::after {
